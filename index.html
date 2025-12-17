@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Party Invitation </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Musik Latar -->
+    <audio id="background-music" loop>
+        <source src="Zhu Ni Shengri Kuai Le- Happy Birthday Mandarin Chinese Kid Song Lyrics.mp3" type="audio/mpeg">
+        Browser Anda tidak mendukung elemen audio.
+    </audio>
+    <button id="music-toggle-btn">🔊 Musik</button>
+
+    <!-- Elemen Canvas untuk Animasi Confetti -->
+    <canvas id="confetti-canvas"></canvas>
+
+    <!-- Bagian Pembuka (Hero) -->
+    <header class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">Kamu Diundang!</h1>
+            <p class="hero-subtitle">Untuk merayakan pesta ulang tahunku</p>
+            <img src="Birthday3.jpg" alt="Foto Ulang Tahun" class="hero-image">
+            <h2 class="birthday-name">@viookta.r</h2>
+            <p class="birthday-age">Berusia 20 Tahun</p>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+        <!-- Bagian Detail Acara -->
+        <section class="details-section">
+            <div class="container">
+                <h2 class="section-title">Waktu & Tempat</h2>
+                <div class="details-grid">
+                    <div class="detail-card">
+                        <div class="card-icon">📅</div>
+                        <h3>Tanggal</h3>
+                        <p>Jum'at, 16 Oktober 2026</p>
+                    </div>
+                    <div class="detail-card">
+                        <div class="card-icon">⏰</div>
+                        <h3>Waktu</h3>
+                        <p>14.00 - 17.00 WIB</p>
+                    </div>
+                    <div class="detail-card">
+                        <div class="card-icon">📍</div>
+                        <h3>Lokasi</h3>
+                        <p>Gedung Aula Pribadi, Link. Lebak Gede</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bagian Hitung Mundur -->
+        <section class="countdown-section">
+            <div class="container">
+                <h2 class="section-title">哥哥，祝你生日快乐!</h2>
+                <h2 class="section-title">Gēgē, zhù nǐ shēngrì kuàilè!</h2>
+                <div id="countdown">
+                    <div class="countdown-item">
+                        <span id="days">00</span>
+                        <p>Hari</p>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="hours">00</span>
+                        <p>Jam</p>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="minutes">00</span>
+                        <p>Menit</p>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="seconds">00</span>
+                        <p>Detik</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bagian Galeri Foto -->
+        <section class="gallery-section">
+            <div class="container">
+                <h2 class="section-title">Beberapa Momen Bahagia</h2>
+                <div class="gallery-grid">
+                    <!-- Ganti dengan foto-foto Anda -->
+                    <img src="Birthday1.jpg" alt="">
+                    <img src="Cake1.JPG" alt="">
+                    <img src="Birthday2.jpg" alt="">
+                    <img src="Cake2.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- Bagian RSVP -->
+        <section class="rsvp-section">
+            <div class="container">
+                <h2 class="section-title">Konfirmasi Kehadiran</h2>
+                <p>Mohon konfirmasi kehadiran Anda sebelum H-1</p>
+                <button id="rsvp-button" class="rsvp-btn">Saya Akan Hadir!</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pop-up RSVP -->
+    <div id="rsvp-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Terima Kasih!</h2>
+            <p>Konfirmasi kehadiran Anda telah kami terima. Kami sangat menantikan kehadiran Anda di pesta kami!</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Dibuat dengan ❤️ oleh Xiao Mei</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
